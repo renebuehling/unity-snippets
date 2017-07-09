@@ -1,4 +1,4 @@
-+ Utilities and helpers
+# Utilities and helpers
 
 Corresponding articles (mostly in German):
 
