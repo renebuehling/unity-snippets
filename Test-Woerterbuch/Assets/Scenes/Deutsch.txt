@@ -1,0 +1,4 @@
+; Hier kannst Du irgendwas schreiben
+
+ErsterText Hallo aus der Textdatei!
+Zeile2 <i>Text</i>\naus <b>der</b> <br><color=red>zweiten Zeile</color>.
