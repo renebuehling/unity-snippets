@@ -67,7 +67,7 @@ public class Woerterbuch : MonoBehaviour
     {
         if (textfile==null)
         {
-            Debug.LogError("Dem Wörterbuch wurde keine Textdatei im Inspector zugewiesen.");
+            Debug.LogWarning("Dem Wörterbuch wurde keine Textdatei im Inspector zugewiesen.");
             return;
         }
         words.Clear();
