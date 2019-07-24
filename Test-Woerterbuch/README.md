@@ -1,5 +1,9 @@
 # Wörterbuch
 
+Zugehöriger Artikel: https://www.gamedev-profi.de/ui-text-aus-text-datei-befuellen/
+
+Youtube-Video: https://www.youtube.com/watch?v=zcAZ5C-IcNM
+
 ## Textfile-Format
 
 - Zeilen, die mit `;` beginnen, sind Kommentare und werden ignoriert.
@@ -7,12 +11,3 @@
 - Leere Zeilen und Zeilen ohne Leerzeichen werden ignoriert.
 - Zeilenumbrüche können mit `\n` oder `<br>` erzeugt werden.
 - Einfache Formatierungen sind mit Unitys [Text-Markup](https://docs.unity3d.com/Manual/StyledText.html) möglich, sofern das Ziel-Textfeld die Eigenschaft `richText` gesetzt hat.
-
-Beispiel: 
-```
-; 
-; Zeilenumbrüche können mit \n oder <br> erzeugt werden.
-1 Hallo.
-Zwei Wie geht es Dir. <br>Neue Zeile\nZeile3
-formatiert Das ist ein <b>rich</b> <color=red>Text</color>, der einige grundlegende <i>Formatierungen</i> unterstützt.
-```
