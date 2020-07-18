@@ -14,13 +14,22 @@ public class ObjektMitTitel : MonoBehaviour
     /// </summary>
     public string titel = "";
 
+    /// <summary>
+    /// Symbol für dieses Objekt.
+    /// </summary>
+    public Texture2D icon = null;
+
+    protected bool mausUeberObjekt = false;
+
     public void OnMouseEnter() // Unity-Nachricht: Unity weiß schon automatisch, wann es diese Funktion aufrufen muss
     {
         EventBus.bus.beiObjektMitTitelAenderung_aufrufen(this); // Zeigt die Maus auf mich, dann mich selbst an im Eventbus eingetragene Darstellungsfunktionen weiterleiten.
+        mausUeberObjekt = true;
     }
 
     public void OnMouseExit()
     {
-        EventBus.bus.beiObjektMitTitelAenderung_aufrufen(null); // Wird die Maus vom Objekt runter bewegt, dann Null (Leere) an im Eventbus eingetragene Darstellungsfunktionen weiterleiten.
+        //EventBus.bus.beiObjektMitTitelAenderung_aufrufen(null); // Wird die Maus vom Objekt runter bewegt, dann Null (Leere) an im Eventbus eingetragene Darstellungsfunktionen weiterleiten.
+        //mausUeberObjekt = false;
     }
 }
